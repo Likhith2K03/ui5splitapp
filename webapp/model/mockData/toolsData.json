@@ -1,0 +1,91 @@
+[{
+	"toolName": "Mitre Saw",
+	"uses": "Cutting wood at precise angles",
+	"availability": "in stock",
+	"price": 15000,
+	"unit": "INR",
+	"image": "/images/Mitre_Saw.jpg",
+	"weight": "15kg",
+	"warranty": "2 years"
+}, {
+	"toolName": "Hand Saw",
+	"uses": "Used for manual cutting of wood and other soft materials.",
+	"availability": "in stock",
+	"price": 450,
+	"unit": "INR",
+	"image": "/images/Hand_Saw.png",
+	"weight": 0.7,
+	"warranty": 1
+}, {
+	"toolName": "Hammer",
+	"uses": "Driving nails into wood",
+	"availability": "in stock",
+	"price": 500,
+	"unit": "INR",
+	"image": "/images/Hammer.jpg",
+	"weight": "1kg",
+	"warranty": "1 year"
+}, {
+	"toolName": "Angle Grinder",
+	"uses": "Grinding and cutting metal",
+	"availability": "in stock",
+	"price": 3000,
+	"unit": "INR",
+	"image": "/images/Angle_Grinder.jpg",
+	"weight": "3kg",
+	"warranty": "1 year"
+}, {
+	"toolName": "Allen Key",
+	"uses": "Tightening hex screws",
+	"availability": "in stock",
+	"price": 200,
+	"unit": "INR",
+	"image": "/images/Allen_Key.jpg",
+	"weight": "0.1kg",
+	"warranty": "6 months"
+}, {
+	"toolName": "Drill",
+	"uses": "Drilling holes in various materials",
+	"availability": "in stock",
+	"price": 2500,
+	"unit": "INR",
+	"image": "/images/Drill.jpg",
+	"weight": "2kg",
+	"warranty": "1 year"
+}, {
+	"toolName": "Cordless Drill",
+	"uses": "Drilling holes without power cord",
+	"availability": "in stock",
+	"price": 4500,
+	"unit": "INR",
+	"image": "/images/Cordless_Drill.jpg",
+	"weight": "2.5kg",
+	"warranty": "1 year"
+}, {
+	"toolName": "Table Saw",
+	"uses": "Cutting large pieces of wood",
+	"availability": "in stock",
+	"price": 20000,
+	"unit": "INR",
+	"image": "/images/Table_Saw.jpg",
+	"weight": "20kg",
+	"warranty": "2 years"
+}, {
+	"toolName": "File",
+	"uses": "Smoothing rough edges",
+	"availability": "out of stock",
+	"price": 150,
+	"unit": "INR",
+	"image": "/images/File.jpg",
+	"weight": "0.2kg",
+	"warranty": "6 months"
+}, {
+	"toolName": "Screw",
+	"uses": "Fastening materials together",
+	"availability": "in stock",
+	"price": 50,
+	"unit": "INR",
+	"image": "/images/Screw.jpg",
+	"weight": "0.05kg",
+	"warranty": "6 months"
+}]

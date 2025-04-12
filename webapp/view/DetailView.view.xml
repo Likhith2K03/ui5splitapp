@@ -1,0 +1,69 @@
+<mvc:View controllerName="app.splitapp.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Detail View" showNavButton="true" navButtonPress="onListView">
+        <content>
+            <VBox class="sapUiResponsiveMargin" alignItems="Center" justifyContent="Start">
+                
+                <!-- Image and Basic Tool Info -->
+                <Image 
+                    src="{ToolsModel>image}" 
+                    width="150px" 
+                    height="150px"  
+                    alt="Tool Image" />
+
+                <ObjectHeader
+                    title="{ToolsModel>toolName}"
+                    number="{ToolsModel>price}"
+                    numberUnit="{ToolsModel>unit}"/>
+
+                <ObjectStatus
+                    title="Availability"
+                    text="{ToolsModel>availability}"
+                    state="{= ${ToolsModel>availability} === 'in stock' ? 'Success' : 'Error' }"/>
+            </VBox>
+
+            <!-- Tab Bar Section -->
+            <IconTabBar class="sapUiContentPadding">
+                <items>
+                    <IconTabFilter icon="sap-icon://information" text="Details">
+                        <VBox class="sapUiContentPadding" alignItems="Start" justifyContent="Start">
+                            <Text text="Detailed specifications and usage information here." class="sapUiTinyMarginBottom" />
+                            <ObjectAttribute title="Weight" text="{ToolsModel>weight}" />
+                            <ObjectAttribute title="Warranty" text="{ToolsModel>warranty}" />
+                            <ObjectAttribute title="Usage" text="{ToolsModel>uses}" />
+                        </VBox>
+                    </IconTabFilter>
+                    
+                    <IconTabFilter icon="sap-icon://supplier" text="Supplier">
+                        <VBox class="sapUiContentPadding" alignItems="Start" justifyContent="Start">
+                            <Text text="Supplier information goes here." />
+                        </VBox>
+                        <Table items="{SupplierModel>/}">
+                            <columns>
+                                <Column>
+                                    <Text text="Tools Name"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="Supplier"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="Contact"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="Location"></Text>
+                                </Column>
+                            </columns>
+                            <ColumnListItem>
+                                <Text text="{SupplierModel>toolsName}"></Text>
+                                <Text text="{SupplierModel>supplierName}"></Text>
+                                <Text text="{SupplierModel>contact}"></Text>
+                                <Text text="{SupplierModel>location}"></Text>
+                            </ColumnListItem>
+                        </Table>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
