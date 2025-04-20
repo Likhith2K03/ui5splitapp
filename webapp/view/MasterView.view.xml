@@ -16,7 +16,7 @@
 					<List items="{ToolsModel>/}" id="idListCtrl" mode="SingleSelectMaster" selectionChange="onItemSelect">
 						<items>
 							<ObjectListItem intro="{ToolsModel>uses}" title="{ToolsModel>toolName}" icon="{ToolsModel>image}" number="{ToolsModel>price}"
-								numberState="{= ${ToolsModel>availability} === 'in stock' ? 'None' : 'Error' }" numberUnit="{ToolsModel>unit}">
+								numberState="{= ${ToolsModel>availability} === 'in stock' ? 'Success' : 'Error' }" numberUnit="{ToolsModel>unit}">
 								<attributes>
 									<ObjectAttribute text="{ToolsModel>weight}" title="Weight"></ObjectAttribute>
 									<ObjectAttribute text="{ToolsModel>warranty}" title="Warranty"></ObjectAttribute>
@@ -32,10 +32,10 @@
 				<footer>
 					<OverflowToolbar>
 						<ToolbarSpacer/>
-						<Button text="Accept" type="Accept"/>
-						<Button text="Reject" type="Reject"/>
+						<Button text="Create" type="Attention" press="onFormView"/>
+						<!-- <Button text="Reject" type="Reject"/>
 						<Button text="Edit"/>
-						<Button text="Delete"/>
+						<Button text="Delete"/> -->
 					</OverflowToolbar>
 				</footer>
 			</Page>

@@ -1,0 +1,11 @@
+<core:FragmentDefinition 
+xmlns:core="sap.ui.core" 
+xmlns="sap.m">
+
+    <SelectDialog title="Suppliers" items="{FragmentModel>/newSuppSet}" confirm="onConfirm">
+        <items>
+            <StandardListItem title="{FragmentModel>supplierName}"></StandardListItem>
+        </items>
+    </SelectDialog>
+
+</core:FragmentDefinition>

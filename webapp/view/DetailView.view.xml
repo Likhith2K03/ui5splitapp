@@ -3,7 +3,7 @@
     xmlns="sap.m">
     <Page title="Detail View" showNavButton="true" navButtonPress="onListView">
         <content>
-            <VBox class="sapUiResponsiveMargin" alignItems="Center" justifyContent="Start">
+            <VBox class="sapUiResponsiveMargin" alignItems="Center" justifyContent="Center">
                 
                 <!-- Image and Basic Tool Info -->
                 <Image 
@@ -37,9 +37,15 @@
                     
                     <IconTabFilter icon="sap-icon://supplier" text="Supplier">
                         <VBox class="sapUiContentPadding" alignItems="Start" justifyContent="Start">
-                            <Text text="Supplier information goes here." />
+                            <Text class="sapUiTinyMarginBottom" text="Supplier information goes here." />
+                            <HBox class="sapUiResponsiveMargin sapUiContentPadding" alignItems="Center" justifyContent="Start">
+                                <Label text="Supplier" class="sapUiTinyMargin"></Label>
+                                <Input id="idNameSupplier" liveChange="onFilter"></Input>
+                                <Label text="City" class="sapUiTinyMargin"></Label>
+                                <Input id="idInputCity" liveChange="onFilter"></Input>
+                            </HBox>
                         </VBox>
-                        <Table items="{SupplierModel>/}">
+                        <Table id="idMTable" items="{SupplierModel>/}">
                             <columns>
                                 <Column>
                                     <Text text="Tools Name"></Text>
@@ -56,7 +62,9 @@
                             </columns>
                             <ColumnListItem>
                                 <Text text="{SupplierModel>toolsName}"></Text>
-                                <Text text="{SupplierModel>supplierName}"></Text>
+                                <Input value="{SupplierModel>supplierName}"
+                                    showValueHelp="true"
+                                    valueHelpRequest="onF4Help"></Input>
                                 <Text text="{SupplierModel>contact}"></Text>
                                 <Text text="{SupplierModel>location}"></Text>
                             </ColumnListItem>

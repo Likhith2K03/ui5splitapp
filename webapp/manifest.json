@@ -83,7 +83,7 @@
       "routes": [
         {
           "name": "RouteMasterView",
-          "pattern": ":?query:",
+          "pattern": "",
           "target": [
             "TargetMasterView", "TargetEmptyView"
           ]
@@ -92,7 +92,14 @@
           "name": "RouteDetailView",
           "pattern": "detailView/{index}",
           "target": [
-            "TargetDetailView"
+             "TargetMasterView", "TargetDetailView"
+          ]
+        },
+        {
+          "name": "RouteFormView",
+          "pattern": "formView",
+          "target": [
+            "TargetMasterView", "TargetFormView"
           ]
         }
       ],
@@ -107,12 +114,18 @@
           "id": "idEmptyView",
           "controlAggregation": "detailPages",
           "name": "EmptyView",
-          "viewLevel": 2
+          "viewLevel": 1
         },
         "TargetDetailView": {
           "id": "DetailView",
           "controlAggregation": "detailPages",
           "name": "DetailView",
+          "viewLevel": 2
+        },
+        "TargetFormView": {
+          "id": "idFormView",
+          "controlAggregation": "detailPages",
+          "name": "FormView",
           "viewLevel": 2
         }
       }

@@ -8,10 +8,17 @@ sap.ui.define([
 
     return Controller.extend("app.splitapp.controller.MasterView", {
         onInit() {},
+
         onDetailView() {
             let oRouter = this.getOwnerComponent().getRouter();
             oRouter.navTo("RouteDetailView");
         },
+
+		onFormView() {
+            let oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("RouteFormView");
+        },
+
         onSort() {
 			let oList = this.getView().byId("idListCtrl");
 			let oItemsBinding = oList.getBinding("items");

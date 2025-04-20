@@ -1,9 +1,9 @@
 sap.ui.define([
-  "sap/ui/core/mvc/Controller"
-], (BaseController) => {
+  "./BaseController"
+], (Controller) => {
   "use strict";
 
-  return BaseController.extend("app.splitapp.controller.App", {
+  return Controller.extend("app.splitapp.controller.App", {
       onInit() {
       }
   });

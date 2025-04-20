@@ -1,0 +1,23 @@
+<mvc:View controllerName="app.splitapp.controller.FormView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page id="idFormView" title="Form View" showNavButton="true" navButtonPress="onListView">
+        <f:SimpleForm id="idSimple" editable="true">
+            <Label text="Tool Name" class="bold-class" design="Bold"></Label>
+            <Input id='idtoolName' ></Input>
+            <Label text="Uses"></Label>
+            <Input id='idUses' ></Input>
+            <Label text="Availability"></Label>
+            <Input id='idAvailability' ></Input>
+            <Label text="Price"></Label>
+            <Input id='idPrice'></Input>
+            <Label text="Unit"></Label>
+            <Input id='idUnit'></Input>
+            <Label text="Weight"></Label>
+            <Input id='idWeight'></Input>
+            <Button text="Submit"></Button>
+        </f:SimpleForm>
+    </Page>
+</mvc:View>
